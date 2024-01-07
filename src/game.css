@@ -1,0 +1,119 @@
+.game__title {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.game__info {
+  text-align: center;
+  max-width: 992px;
+  margin: 25px auto;
+}
+
+.game__info__legend {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.divider-bottom:after {
+  content: '';
+  display: block;
+  max-width: 540px;
+  height: 2px;
+  border: 1px solid #000;
+  margin: 25px auto 0 auto;
+}
+
+.game__board {
+  margin: 25px auto 0 auto;
+  flex-direction: column;
+  text-align: center;
+  max-width: 640px;
+}
+
+.game__board__status {
+  margin-bottom: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game__board__row {
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid #fff;
+}
+
+.cell {
+  flex: 1;
+  padding: 25px 20px;
+  background-color: #000;
+  border: none;
+  border-right: 1px solid #fff;
+  transition: all .3s ease-in-out;
+}
+
+.cell:focus {
+  outline: none;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* classes */
+.cell {
+  position: relative;
+}
+
+.cell.revelead:after {
+  display: block;
+}
+
+.cell:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.x:after {
+  background-color: #700206;
+}
+
+.E:after {
+  background-color: #059e1e;
+}
+
+.O:after {
+  background-color: #fff;
+}
+
+.legend__cell {
+  display: inline-block;
+  padding: 5px;
+  background-color: red;
+  position: relative;
+  top: 2px;
+}
+
+.legend__cell--white {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.legend__cell--red {
+  background-color: #700206;
+  border: 1px solid #700206;
+}
+
+.legend__cell--green {
+  background-color: #059e1e;
+  border: 1px solid #059e1e;
+}
